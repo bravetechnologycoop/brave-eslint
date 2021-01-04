@@ -6,8 +6,7 @@
   "peerDependencies": {
     "eslint": ">= 3"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bravetechnologycoop/eslint-config-brave.git"
@@ -17,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/bravetechnologycoop/eslint-config-brave/issues"
   },
-  "homepage": "https://github.com/bravetechnologycoop/eslint-config-brave#readme"
+  "homepage": "https://github.com/bravetechnologycoop/eslint-config-brave#readme",
+  "dependencies": {
+    "eslint": "^7.17.0"
+  }
 }
