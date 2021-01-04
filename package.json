@@ -1,5 +1,5 @@
 {
-  "name": "brave-eslint",
+  "name": "eslint-config-brave",
   "version": "1.0.0",
   "description": "Centralised eslint configuration for Brave",
   "main": "index.js",
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bravetechnologycoop/brave-eslint.git"
+    "url": "git+https://github.com/bravetechnologycoop/eslint-config-brave.git"
   },
   "author": "Marisa Doig",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bravetechnologycoop/brave-eslint/issues"
+    "url": "https://github.com/bravetechnologycoop/eslint-config-brave/issues"
   },
-  "homepage": "https://github.com/bravetechnologycoop/brave-eslint#readme"
+  "homepage": "https://github.com/bravetechnologycoop/eslint-config-brave#readme"
 }
