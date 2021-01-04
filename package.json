@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Centralised eslint configuration for Brave",
   "main": "index.js",
-  "peerDependencies": {
-    "eslint": ">= 3"
-  },
   "scripts": {},
   "repository": {
     "type": "git",
