@@ -3,14 +3,23 @@ module.exports = {
     node: true,
     es6: true,
   },
-  extends: ['airbnb', 'prettier', 'prettier-config-brave'],
-  plugins: ['prettier'],
+  extends: ["airbnb", "prettier"],
+  plugins: ["prettier"],
   rules: {
-    'prettier/prettier': ['error'],
-    'func-style': ['warn', 'declaration'],
-    'function-call-argument-newline': ['error', 'consistent'],
-    'prefer-destructuring': [
-      'error',
+    "prettier/prettier": [
+      "error",
+      {
+        singleQuote: true,
+        semi: false,
+        arrowParens: "avoid",
+        printWidth: 150,
+        trailingComma: "all",
+      },
+    ],
+    "func-style": ["warn", "declaration"],
+    "function-call-argument-newline": ["error", "consistent"],
+    "prefer-destructuring": [
+      "error",
       {
         array: false,
         object: false,
@@ -19,9 +28,14 @@ module.exports = {
         enforceForRenamedProperties: false,
       },
     ],
-    'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
-    'no-await-in-loop': [0],
-    'consistent-return': [0],
+    "no-restricted-syntax": [
+      "error",
+      "ForInStatement",
+      "LabeledStatement",
+      "WithStatement",
+    ],
+    "no-await-in-loop": [0],
+    "consistent-return": [0],
     camelcase: [0],
   },
-}
+};
