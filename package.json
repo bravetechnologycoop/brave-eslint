@@ -14,9 +14,6 @@
     "url": "https://github.com/bravetechnologycoop/eslint-config-brave/issues"
   },
   "homepage": "https://github.com/bravetechnologycoop/eslint-config-brave#readme",
-  "dependencies": {
-    "prettier-config-brave": "git+https://github.com/bravetechnologycoop/prettier-config-brave.git"
-  },
   "devDependencies": {
     "eslint": "^7.2.0",
     "eslint-config-airbnb": "^18.2.1",
@@ -26,6 +23,6 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.0.0",
-    "prettier": "^2.2.1"
+    "prettier": "git+https://github.com/bravetechnologycoop/prettier-config-brave.git"
   }
 }
