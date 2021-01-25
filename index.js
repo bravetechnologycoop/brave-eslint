@@ -3,7 +3,7 @@ module.exports = {
     node: true,
     es6: true,
   },
-  extends: ['airbnb', 'prettier'],
+  extends: ['airbnb', 'prettier', 'prettier-config-brave'],
   plugins: ['prettier'],
   rules: {
     'prettier/prettier': ['error'],
