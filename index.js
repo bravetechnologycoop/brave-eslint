@@ -6,16 +6,6 @@ module.exports = {
   extends: ["airbnb", "prettier", "plugin:prettier/recommended"],
   plugins: ["prettier"],
   rules: {
-    "prettier/prettier": [
-      "error",
-      {
-        singleQuote: true,
-        semi: false,
-        arrowParens: "avoid",
-        printWidth: 150,
-        trailingComma: "all",
-      },
-    ],
     "func-style": ["warn", "declaration"],
     "function-call-argument-newline": ["error", "consistent"],
     "prefer-destructuring": [
@@ -37,5 +27,15 @@ module.exports = {
     "no-await-in-loop": [0],
     "consistent-return": [0],
     camelcase: [0],
+    "prettier/prettier": [
+      "error",
+      {
+        singleQuote: true,
+        semi: false,
+        arrowParens: "avoid",
+        printWidth: 150,
+        trailingComma: "all",
+      },
+    ],
   },
 };
