@@ -30,11 +30,11 @@ module.exports = {
     "prettier/prettier": [
       "error",
       {
-        singleQuote: true,
-        semi: false,
-        arrowParens: "avoid",
-        printWidth: 150,
-        trailingComma: "all",
+        "singleQuote": true,
+        "semi": false,
+        "arrowParens": "avoid",
+        "printWidth": 150,
+        "trailingComma": "all",
       },
     ],
   },
