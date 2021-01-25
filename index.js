@@ -3,31 +3,30 @@ module.exports = {
     node: true,
     es6: true,
   },
-  extends: "eslint:recommended",
-  globals: {
-    Atomics: "readonly",
-    SharedArrayBuffer: "readonly",
-  },
-  parserOptions: {
-    ecmaVersion: 2018,
-  },
+  extends: ["airbnb", "prettier"],
+  plugins: ["prettier"],
   rules: {
-    indent: [
+    "prettier/prettier": ["error"],
+    "func-style": ["warning", "declaration"],
+    "function-call-argument-newline": ["error", "consistent"],
+    "prefer-destructuring": [
       "error",
-      4,
       {
-        SwitchCase: 1,
+        array: false,
+        object: false,
+      },
+      {
+        enforceForRenamedProperties: false,
       },
     ],
-    "linebreak-style": ["error", "unix"],
-    "func-style": ["error", "declaration"],
-    quotes: [
+    "no-restricted-syntax": [
       "error",
-      "single",
-      {
-        avoidEscape: true,
-        allowTemplateLiterals: true,
-      },
+      "ForInStatement",
+      "LabeledStatement",
+      "WithStatement",
     ],
+    "no-await-in-loop": [0],
+    "consistent-return": [0],
+    camelcase: [0],
   },
-}
+};
