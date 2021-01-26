@@ -2,6 +2,7 @@ module.exports = {
   env: {
     node: true,
     es6: true,
+    jest: true,
   },
   extends: ["airbnb", "prettier", "plugin:prettier/recommended"],
   plugins: ["prettier"],
@@ -30,11 +31,11 @@ module.exports = {
     "prettier/prettier": [
       "error",
       {
-        "singleQuote": true,
-        "semi": false,
-        "arrowParens": "avoid",
-        "printWidth": 150,
-        "trailingComma": "all",
+        singleQuote: true,
+        semi: false,
+        arrowParens: "avoid",
+        printWidth: 150,
+        trailingComma: "all",
       },
     ],
   },
