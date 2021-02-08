@@ -29,12 +29,6 @@ module.exports = {
     "no-await-in-loop": [0],
     "consistent-return": [0],
     camelcase: [0],
-    "no-unused-vars": [
-      "error",
-      {
-        "varsIgnorePattern": "should|expect"
-      }
-    ],
     "prettier/prettier": [
       "error",
       {
@@ -47,10 +41,16 @@ module.exports = {
     ],
   },
   "overrides": [{
-    "files": [ "./test/*" ],
+    "files": [ "test/**/*" ],
     "rules": {
       "no-unused-expressions": 0,
-      "import/no-extraneous-dependencies": 0
+      "import/no-extraneous-dependencies": 0,
+      "no-unused-vars": [
+        "error",
+        {
+          "varsIgnorePattern": "should|expect"
+        }
+      ]
     }
   }]
 };
