@@ -3,6 +3,7 @@ module.exports = {
     node: true,
     es6: true,
     jest: true,
+    mocha: true
   },
   extends: ["airbnb", "prettier", "plugin:prettier/recommended"],
   plugins: ["prettier"],
@@ -28,6 +29,12 @@ module.exports = {
     "no-await-in-loop": [0],
     "consistent-return": [0],
     camelcase: [0],
+    "no-unused-vars": [
+      "error",
+      {
+        "varsIgnorePattern": "should|expect"
+      }
+    ],
     "prettier/prettier": [
       "error",
       {
@@ -39,4 +46,10 @@ module.exports = {
       },
     ],
   },
+  "overrides": [{
+    "files": [ "./test/*" ],
+    "rules": {
+      "no-unused-expressions": 0
+    }
+  }]
 };
